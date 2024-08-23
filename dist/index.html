@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bose Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../dist/input.css">
+    <style>
+        .test-me{
+            height: 500px;
+            gap: 4px;
+            background-position: center;
+            width: 100%
+        }
+    </style>
+</head>
+<body class="font-bose">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-black text-white text-center text-sm py-2">
+        Save on select products during our Back-to-school Sale. <a href="#" class="underline">SHOP</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm py-4">
+        <div class="block lg:hidden">
+            <button class="md:hidden px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+              </button>
+            <!-- <button id="mobile-menu-button" class="focus:outline-none">Show</button> -->
+        </div>
+        <div class="container mx-auto flex items-center justify-between px-4">
+            <!-- Left Side (empty) -->
+            <div class="w-1/3 flex justify-start space-x-6 xs:hidden">
+                <a href="#" class="text-gray-600">SHOP</a>
+                <a href="#" class="text-gray-600">EXPLORE</a>
+                <a href="#" class="text-gray-600">SUPPORT</a>
+            </div>
+            <!-- Centered Logo -->
+            <div class="w-1/3 text-center">
+                <img src="../dist/images/logo.svg" alt="Bose Logo" class="mx-auto h-[10px]">
+            </div>
+            <!-- Right Side Links -->
+            <div class="w-1/3 flex justify-end space-x-6">
+                
+                <div class="flex space-x-4 w-1/3">
+                    <a href=""><img src="../dist/images/search.png" alt="search" class="h-[5px]"></a>
+                    <a href=""><img src="../dist/images/user.png" alt="search"></a>
+                    <a href=""><img src="../dist/images/love.png" alt="search"></a>
+                    <a href=""><img src="../dist/images/trolley.png" alt="search"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-screen sm:h-screen" style="background-image: url('../dist/images/update_pic.webp');">
+        <div class="absolute inset-0 bg-black** opacity-20"></div>
+        <div class="relative z-10 container mx-auto h-full flex flex-col justify-center items-start pl-16 pt-72 sm:pl-16 sm:pt-72">
+            <span class="text-white text-2xl mb-4 sm:mb-4">BACK-TO-SCHOOL SALE</span>
+            <h1 class="text-white text-7xl font-bold mb-4">Start the new year in style</h1>
+            <p class="text-white text-xl mb-8 sm:text-xl sm:mb-8">Save over 25% on select products.</p>
+            <a href="#" class="bg-white text-black px-6 py-2 font-semibold text-lg w-[70px] sm:w-[70px] sm:px-6">SHOP</a>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <div class="bg-gray-100 shadow-sm py-4 h-24 text-center">
+        <div class="container mx-auto flex justify-around font-semibold">
+            <a href="#" class="text-gray-700 hover:text-black">Speakers</a>
+            <a href="#" class="text-gray-700 hover:text-black">Earbuds</a>
+            <a href="#" class="text-gray-700 hover:text-black">Headphones</a>
+            <a href="#" class="text-gray-700 hover:text-black">Soundbars</a>
+            <!-- <a href="#" class="text-gray-700 hover:text-black">Home Theater</a>
+            <a href="#" class="text-gray-700 hover:text-black">Portable PA</a> -->
+        </div>
+    </div>
+
+    <!-- Trending Products Section -->
+    <div class="container mx-auto pt-28 bg-[#f8f8f8]">
+        <h2 class="text-5xl font-extrabold mb-10">Trending products</h2>
+        <div class="flex justify-between** items-start space-x-1">
+            <!-- Product Card 1 -->
+            <div class="w-1/4 bg-gray-100 hover:bg-white border shadow-sm p-4 group">
+                <img src="../dist/images/blu headset.png" alt="Bose QuietComfort Headphones" class="w-full h-auto mb-4">
+                <h3 class="text-sm font-semibold whitespace-nowrap">Bose QuietComfort Headphones</h3>
+                <div class="flex justify-between** items-center mt-2 space-x-3">
+                    <p class="text-black text-sm">$249.00</p>
+                    <p class="text-red-500 line-through text-sm">$349.00</p>
+                </div>
+                <div class="flex space-x-6 mt-3">
+                    <div class="w-6 h-6 rounded-full" style="background-color: black;"></div>
+                    <div class="w-6 h-6 rounded-full" style="background-color: skyblue;"></div>
+                    <div class="w-6 h-6 rounded-full" style="background-color: brown;"></div>
+                    <div class="w-6 h-6 rounded-full" style="background-color: rgb(247, 189, 189);"></div>
+                    <div class="w-6 h-6 rounded-full" style="background-color: gray;"></div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="w-1/4 bg-gray-100 hover:bg-white border shadow-sm p-4 group">
+                <img src=".//images/blue buds.png" alt="Bose QuietComfort Ultra Earbuds" class="w-full h-auto mb-4">
+                <h3 class="text-sm font-semibold whitespace-nowrap">Bose QuietComfort Ultra Earbuds</h3>
+                <div class="flex justify-between** items-center mt-2 space-x-3">
+                    <p class="text-black text-sm">$249.00</p>
+                    <p class="text-red-500 line-through text-sm">$349.00</p>
+                </div>
+                <div class="flex space-x-6 mt-3">
+                    <div class="w-6 h-6 rounded-full" style="background-color: black;"></div>
+                    <div class="w-6 h-6 rounded-full" style="background-color: skyblue;"></div>
+                    <div class="w-6 h-6 rounded-full" style="background-color: rgb(247, 189, 189);"></div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="w-1/4 bg-gray-100 hover:bg-white border shadow-sm p-4 group">
+                <img src="..//dist/images/3rd headset.png" alt="Bose QuietComfort Ultra Headphones" class="w-full h-auto mb-4">
+                <h3 class="text-sm font-semibold whitespace-nowrap">Bose QuietComfort Ultra Headphones</h3>
+                <div class="flex items-center mt-2 space-x-3">
+                    <p class="text-black text-sm">$249.00</p>
+                    <p class="text-red-500 line-through text-sm">$349.00</p>
+                </div>
+                <div class="flex space-x-6 mt-3">
+                    <div class="w-6 h-6 rounded-full" style="background-color: black;"></div>
+                    <div class="w-6 h-6 rounded-full" style="background-color: rgb(247, 189, 189);"></div>
+                    <div class="w-6 h-6 rounded-full" style="background-color: gray;"></div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="w-1/4 bg-gray-100 hover:bg-white border shadow-sm p-4 group">
+                <img src="../dist/images/last buds.png" alt="Bose Ultra Open Earbuds" class="w-full h-auto mb-4">
+                <h3 class="text-sm font-semibold whitespace-nowrap">Bose Ultra Open Earbuds</h3>
+                <div class="flex items-center mt-2 space-x-3">
+                    <p class="text-black">$299.00</p>
+                </div>
+                <div class="flex space-x-6 mt-3">
+                    <div class="w-6 h-6 rounded-full" style="background-color: black;"></div>
+                    <div class="w-6 h-6 rounded-full" style="background-color: gray;"></div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Trending slider -->
+    <div class="mx-auto p-4 pt-6 md:p-6 flex justify-end gap-3">
+        <!-- Slider controls -->
+      <button type="button" data-carousel-prev>
+        <span class="inline-flex hover:bg-gray-200 items-center justify-center w-10 h-10 rounded-full border border-black bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blue-500 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" data-carousel-next>
+        <span class="inline-flex hover:bg-gray-200 items-center justify-center w-10 h-10 rounded-full border border-black bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blue-500 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+    
+     <!-- Hero Section Two -->
+     <h2 class="text-5xl font-extrabold mx-8 mb-10 mt-10">Featured products</h2>
+     <section class="relative bg-cover bg-center h-screen w-[80vw] mx-8" style="background-image: url('../dist/images/hero\ 2.webp');">
+        <div class="absolute inset-0 bg-black** opacity-20"></div>
+        <div class="relative z-10 container mx-auto h-full flex flex-col justify-center items-start pl-16 pt-72">
+            <h1 class="text-white text-6xl font-extrabold mb-4">Coco Gauff pauses for nothing</h1>
+            <p class="text-white text-xl mb-8 font-bold">The tennis pro hears it all, all the time with Bose Ultra Open Earbuds.</p>
+            <a href="#" class="bg-white text-black px-6 py-2 font-semibold text-lg w-[70px]">BUY NOW</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="container mx-auto pb-28 pt-6">
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
+            <div class="relative w-[100px] h-[100px] test-me"> <!-- Adjust the height here -->
+                <img src="../dist/images/Take over buds.webp" alt="Featured Product" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-opacity-50 flex flex-col items-end p-6">
+                    <div class="text-black pl-2 pt-80 bottom-2">
+                        <h3 class="text-3xl font-extrabold">Take over the tempo</h3>
+                        <span class="text-lg">New QuietComfort Headphones in limited-edition Blue Dusk.</span>
+                        <a href="#" class="mt-4 btn bg-black text-white whitespace-nowrap">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="relative w-[100px] h-[100px] test-me"> <!-- Adjust the height here -->
+                <img src="../dist/images/listen with flair buds.webp" alt="Featured Product" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-opacity-50 flex flex-col items-end p-6">
+                    <div class="text-black pl-2 pt-80 bottom-2">
+                        <h3 class="text-3xl font-extrabold">Listen with flair</h3>
+                        <span class="text-lg">New QuietComfort Headphones in limited-edition Chilled Lilac.</span>
+                        <a href="#" class="mt-4 btn bg-black text-white">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Repeat for more featured products -->
+        </div>
+    </section>
+    
+
+    <!-- Hero Section Three -->
+    <section class="relative bg-cover bg-center h-screen** mx-8" style="background-image: url('../dist/images/get\ game\ day\ ready');">
+        <div class="absolute inset-0 bg-black** opacity-20"></div>
+        <div class="relative z-10 container mx-auto h-full flex flex-col justify-center items-start pl-6 pt-96 bottom-4 left-4">
+            <h1 class="text-white text-6xl font-extrabold mb-4">Get game-day-ready sound</h1>
+            <p class="text-white text-xl mb-8 font-bold">Score up to $150 off of soundbars and more.</p>
+            <a href="#" class="bg-white text-black px-6 py-2 font-semibold text-lg w-[70px]">SHOP</a>
+        </div>
+    </section>
+
+        <!-- Unleash Section -->
+    <div class="container mx-auto pt-32 bg-[#f8f8f8]">
+        <h2 class="text-5xl font-extrabold mx-8 tracking-tight mb-1">Bose Stories</h2>
+        <span class=" mb-8 mx-8 text-lg">The people & stories that excites us.</span>
+        <section class="relative bg-cover bg-center h-screen** mx-8 mt-6" style="background-image: url('../dist/images/unleashing\ energy.webp');">
+            <div class="absolute inset-0 bg-black** opacity-20"></div>
+            <div class="relative z-10 container mx-auto h-full flex flex-col justify-center items-start pl-10 pt-96 bottom-6 left-4">
+                <h1 class="text-white text-6xl font-extrabold mb-4">Unleashing the energy</h1>
+                <p class="text-white text-xl mb-8 font-bold">DJ & Producer John Summit on how the new SoundLink Max Speaker turns up the vibe.</p>
+                <a href="#" class="bg-white text-black px-6 py-2 font-semibold text-lg w-[70px] pt-7">LEARN MORE</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Why Buy From Bose Section -->
+    <section class="bg-white py-12 pt-32 mb-24 px-7">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold mb-20 tracking-tight">Why buy from Bose</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8** text-center">
+                <!-- 90-day return policy -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-100 rounded-full p-4 mb-4">
+                        <img src="../dist/images/time-and-date.png" alt="" class="h-11 w-11 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg">90-day return policy</h3>
+                    <p class="text-black mt-2">Try it for 90 days to make sure it's right for you.</p>
+                    <a href="#" class="text-blue-600 font-semibold mt-6">Learn more &gt;</a>
+                </div>
+    
+                <!-- Price match promise -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-100 rounded-full p-4 mb-4">
+                        <img src="../dist/images/drop-with-hand.png" alt="" class="h-11 w-11 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg">Price match promise</h3>
+                    <p class="text-black mt-2">Shop confidently. We'll match a lower price.</p>
+                    <a href="#" class="text-blue-600 font-semibold mt-6">Terms & conditions &gt;</a>
+                </div>
+    
+                <!-- Complimentary shipping & returns -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-100 rounded-full p-4 mb-4">
+                        <img src="../dist/images/delivery-truck.png" alt="" class="h-11 w-11 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg">Complimentary shipping & returns</h3>
+                    <p class="text-black mt-6">On in-stock orders of $49 or more.</p>
+                    <a href="#" class="text-blue-600 font-semibold mt-8">Learn more &gt;</a>
+                </div>
+    
+                <!-- My Bose perks -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-100 rounded-full p-4 mb-4">
+                        <img src="../dist/images/user.png" alt="" class="h-11 w-11 object-contain">
+                    </div>
+                    <h3 class="font-semibold text-lg">My Bose perks</h3>
+                    <p class="text-black mt-2">My Bose members get access to exclusive experiences, offers, and more.</p>
+                    <a href="#" class="text-blue-600 font-semibold mt-6">Learn more &gt;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bose Automotive Section -->
+    <section class="relative bg-cover bg-center h-screen mx-12" style="background-image: url('../dist/images/bose_Automotive.webp');">
+        <div class="absolute inset-0 bg-black** opacity-20"></div>
+        <div class="relative z-10 container mx-auto h-full flex flex-col justify-center items-start pl-16 pt-96">
+            <h1 class="text-white text-4xl font-extrabold mb-3 tracking-tight">Bose Automotive</h1>
+            <p class="text-white text-xl mb-8 font-semibold">True believers in the power of sound</p>
+            <a href="#" class="bg-white text-black px-6 py-2 font-semibold text-lg w-[70px]">LEARN MORE</a>
+        </div>
+    </section>
+
+        <!-- Page Text Breaker -->
+    <section class="container pl-12 mt-28">
+        <p class="text-black font-bold mb-10">Important recall notice regarding certain Acoustimass, Lifestyle, and Companion system<br> bass modules manufactured prior to April 1, 2006.</p>
+        <a href="#" class="text-blue-600 font-semibold mt-11">LEARN MORE &gt;</a>
+    </section>
+
+    <!-- Sound is Power -->
+    <section class="container pl-12 mt-28">
+        <h2 class="text-5xl font-extrabold mb-1 mt-28">Sound is Power</h2>
+        <span class="text-lg">Looks good. Sounds amazing. Your life, your soundtrack, your Bose.</span>
+    </section>
+
+    <!-- Pre-Footer slider -->
+    <div class="container relative mx-auto p-4 pt-6 md:p-6 lg:p mt-8">
+        <div class="grid grid-cols-4 mx-12 gap-2">
+          <div>
+            <img src="../dist/images/600x600.webp" alt="picture1" class="h-72">
+          </div>
+          <div>
+            <img src="../dist/images/600x600 (1).webp" alt="picture2" class="h-72">
+          </div>
+          <div>
+            <img src="../dist/images/600x600 (2).webp" alt="picture3" class="h-72">
+          </div>
+            <div>
+              <img src="../dist/images/600x600 (3).webp" alt="picture4" class="h-72">
+            </div>
+          <div class="hidden">
+            <img src="../dist/images/600x600 (4).webp" alt="picture5" class="h-72">
+          </div>
+          <div class="hidden">
+            <img src="../dist/images/600x600 (1).webp" alt="picture6" class="h-72">
+          </div>
+          <div class="hidden">
+            <img src="../dist/images/600x600 (1).webp" alt="picture7" class="h-72">
+          </div>
+          <div class="hidden">
+            <img src="../dist/images/600x600 (1).webp" alt="picture8" class="h-72">
+          </div>
+          
+        </div>
+
+        <!-- Slider controls -->
+
+      <button type="button" class="absolute overflow-hidden top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-black bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blue-500 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="absolute overflow-hidden top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-black bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blue-500 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+
+    <!-- $20 off your first purchase -->
+    <section class="bg-white py-16 mt-12">
+        <div class="max-w-2xl** gap-0 mx-auto text-center">
+          <!-- Main Heading -->
+          <h2 class="text-5xl font-extrabold mb-4">Get $20 off your first purchase*</h2>
+          
+          <!-- Subheading -->
+          <p class="text-2xl font-medium mb-10">Three steps to save on your purchase of $199 or more:</p>
+          
+          <!-- Steps -->
+          <div class="flex flex-col sm:flex-row justify-center items-start space-y-4 sm:space-y-0 sm:space-x-8 mb-10">
+            <div class="flex items-center">
+              <div class="bg-black text-white rounded-full w-11 h-7 flex justify-center items-center text-sm font-bold">1</div>
+              <p class="ml-3 text-sm font-bold">Sign up to receive Bose emails and communications below</p>
+            </div>
+            <div class="flex items-center">
+              <div class="bg-black text-white rounded-full w-11 h-7 flex justify-center items-center text-sm font-bold">2</div>
+              <p class="ml-3 text-sm font-bold">Become a My Bose member</p>
+            </div>
+            <div class="flex items-center">
+              <div class="bg-black text-white rounded-full w-11 h-7 flex justify-center items-center text-sm font-bold">3</div>
+              <p class="ml-3 text-sm font-bold">Receive an email with your $20 coupon</p>
+            </div>
+          </div>
+          
+      
+          <!-- Email Form -->
+          <form class="max-w-lg mx-auto flex items-center space-x-6 text-black">
+            <input type="email" placeholder="Email address" class="w-full border-b-4 border-black py-4 mb-6 focus:outline-none focus:border-gray-500">
+            <button type="submit" class="bg-white text-black py-3 px-6 border border-black text-sm font-semibold whitespace-nowrap hover:bg-gray-200 transition-colors">SIGN UP &rarr;</button>
+          </form>
+          <p class="text-xs text-black font-bold mt-4** max-w-md mx-auto">*The promo code will be sent via email and can take up to 30 minutes. Offer valid on purchase of $199 USD or more. Other exclusions apply.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-white text-black">
+        <div class="max-w-screen-xl mx-auto px-4 pl-20 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0 leading-loose">
+            <!-- Customer Care -->
+            <div>
+                <h2 class="font-semibold text-sm mb-4">Customer Care</h2>
+                <ul>
+                    <li><a href="#" class="hover:underline text-sm">Troubleshooting</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Repair & Replacement</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Order Tracking</a></li>
+                    <li><a href="#" class="hover:underline text-sm">My Bose Sign In / Register</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Register Your Product</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Our company -->
+            <div>
+                <h2 class="font-semibold text-sm mb-4">Our company</h2>
+                <ul>
+                    <li><a href="#" class="hover:underline text-sm">About Us</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Find a Store</a></li>
+                    <li><a href="#" class="hover:underline text-sm">ESG</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Careers</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Press Room</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Stories</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Partnerships & Licensing</a></li>
+                </ul>
+            </div>
+    
+            <!-- Offers -->
+            <div>
+                <h2 class="font-semibold text-sm mb-4">Offers</h2>
+                <ul>
+                    <li><a href="#" class="hover:underline text-sm">Gift Cards</a></li>
+                    <li><a href="#" class="hover:underline text-sm">ID.me Group Program</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Corporate Gifting</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Partner & Employee Program</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Certified Refurbished</a></li>
+                    <li><a href="#" class="hover:underline text-sm">Trade Up</a></li>
+                </ul>
+            </div>
+    
+            <!-- Additional Links -->
+            <div class="leading-loose">
+                <h2 class="font-semibold text-sm mb-4">Additional Links</h2>
+                <ul>
+                    <li><a href="#" class="hover:underline flex items-center space-x-2 text-sm">Automotive <span class="inline-block">&rarr;</span></a></li>
+                    <li><a href="#" class="hover:underline flex items-center space-x-2 text-sm">Reseller Portal <span class="inline-block">&rarr;</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Image Logo  -->
+            <div>
+                <div class="inline-block gap-5 space-x-2">
+                    <img src="../dist/images/favicon.ico" alt="" class="inline-block w-1/3">
+                    <span class="text-sm">Bose App</span>
+                </div>
+                <div class="inline-block space-x-2 mt-6">
+                    <img src="../dist/images/download[1].svg" alt="" class="inline-block w-1/4">
+                    <span class="text-sm">Bose Connect App</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="max-w-screen-xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center border-b border-gray-200">
+            <div class="flex space-x-4 my-4 w-1/1">
+                <div class="flex space-x-4 w-1/4 gap-8">
+                    <a href=""><img src="../dist/images/video.png" alt="search"></a>
+                    <a href=""><img src="../dist/images/twitter.png" alt="search"></a>
+                    <a href=""><img src="../dist/images/facebook.png" alt="search"></a>
+                    <a href=""><img src="../dist/images/youtube.png" alt="search"></a>
+                    <a href=""><img src="../dist/images/video (1).png" alt="search"></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-sm text-gray-600 mb-32 mt-12 pl-4">
+            <div class="flex space-x-4 text-gray-500 mb-2">
+                <a href="#" class="hover:underline">© Bose Corporation 2024</a>
+                <a href="#" class="hover:underline">Sitemap</a>
+                <a href="#" class="hover:underline">Legal</a>
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Accessibility</a>
+                <a href="#" class="hover:underline">CA Notice of Collection</a>
+                <a href="#" class="hover:underline">Your privacy choices</a>
+                <a href="#" class="hover:underline">Cookies Notice</a>
+                <a href="#" class="hover:underline">Terms of Sale</a>
+                <a href="#" class="hover:underline">Terms of Use</a>
+            </div>
+            <a href="#" class="hover:underline mt-5">CA Supply Chains Act</a>
+        </div>
+    </footer>
+    
+
+    <script src="../dist/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+</body>
+</html>
